@@ -19,8 +19,8 @@ if cap.isOpened() is False:
 # カスケード評価器を埋め込み
 # https://github.com/opencv/opencv/tree/master/data/haarcascades
 
-cascade = cv2.CascadeClassifier('/Users/koishi/Documents/Python_practice/python_opencv/haarcascade_frontalface_alt2.xml')
-eye_cascade = cv2.CascadeClassifier('/Users/koishi/Documents/Python_practice/python_opencv/haarcascade_eye_tree_eyeglasses.xml')
+cascade = cv2.CascadeClassifier('/haarcascade_frontalface_alt2.xml')
+eye_cascade = cv2.CascadeClassifier('/haarcascade_eye_tree_eyeglasses.xml')
 
 def mosaic(src, ratio=0.1):
     small = cv2.resize(src, None, fx=ratio, fy=ratio, interpolation=cv2.INTER_NEAREST)
